@@ -1,0 +1,48 @@
+%title-font{
+    font-family: 'DM Serif Text', serif;
+    font-weight: 200;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+%title-line{
+    background: #E8C300;
+        border-radius: 50px;
+        height: 5px;
+        width: 60px;
+        margin: 22px auto;
+        position: relative;
+        z-index: 2;
+}
+%context-style{
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center ;
+    margin-bottom: 32px;
+}
+
+%text-style{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+
+%after-image{
+    content: '';
+    position: absolute;
+    top: 163px;
+    width: 250px;
+    height: 250px;
+    border: 20px solid #E8C300;
+    border-radius: 5px;
+}
+
+%background-line{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: rgba(255,255,255,0.2);
+    top: 0;
+}

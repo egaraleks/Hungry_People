@@ -1,0 +1,525 @@
+@media (max-width: 1440px){
+    .header__nav{
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 1350px){
+    .events{
+        &__image{
+            height: 450px;
+        }
+        &__picture{
+            &::after{
+                width: 200px;
+                height: 200px;
+                border: 15px solid #E8C300;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        &__picture-corporate {
+            &::before{
+                padding-top: 25%;
+            }
+        }
+    }
+
+    .contact__form-input + .contact__form-input{
+        margin-left: 20px;
+    }
+    .contact__form-info{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact__form-link{
+        margin-top: 15px;
+    }
+    .contact__form-btn{
+        min-width: 350px;
+    }
+}
+
+@media (max-width: 1285px){
+    .about,
+    .team,
+    .specialties,
+    .booking{
+        &__info{
+            padding-top: 100px;
+            max-width: 450px;
+        }
+    }
+}
+
+
+@media (max-width: 1130px){
+    .header,
+    .team,
+    .specialties,
+    .events{
+
+        &::before{
+            display: none;
+        }
+        &::after{
+            display: none;
+        }
+    }
+    .header__nav{
+        max-width: 333px;
+    }
+
+    .header__main{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .header__main-title{
+        font-size: 73px;
+        line-height: 30px;
+    }
+    .about,
+    .team,
+    .specialties{
+        &__info{
+            padding-top: 0;
+        }
+
+        &__picture{
+            max-width: 415px;
+            padding-right: 35px;
+            padding-left: 35px;
+            &::after{
+                top: 50%;
+                transform: translateY(-50%);
+                width: 150px;
+                height: 150px;
+                border: 10px solid #E8C300;
+            }
+        }
+    }
+    .booking{
+        &__inner{
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+        &__info{
+            padding-top: 0;
+        }
+
+        &__picture{
+            max-width: 415px;
+            padding-right: 35px;
+            padding-left: 35px;
+            &::after{
+                top: 50%;
+                transform: translateY(-50%);
+                width: 150px;
+                height: 150px;
+                border: 10px solid #E8C300;
+            }
+        }
+    }
+
+    .galerie__images {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+}
+
+@media (max-width: 1060px){
+    .menu{
+        &__items{
+            justify-content: space-around;
+        }
+        &__item:nth-child(3){
+            display: none;
+        }
+    }
+    .events{
+        &__image{
+            height: 370px;
+        }
+        &__picture{
+            &::after{
+                width: 150px;
+                height: 150px;
+                border: 12px solid #E8C300;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        &__picture-corporate {
+            padding-right: 40px;
+            &::before{
+                padding-top: 15%;
+            }
+        }
+        &__picture-weddings{
+            padding-left: 40px;
+        }
+    }     
+}
+
+
+
+
+
+@media (max-width: 900px){
+    .header__nav-logo-img{
+     width: 120px;   
+    }
+
+    .header__main-title{
+        font-size: 65px;
+        line-height: 54px;
+    }
+
+    .about,
+    .specialties{
+        &__inner{
+            display: block;
+        }
+        &__info{
+            margin: 0 auto;
+            max-width: 650px;
+        }
+        &__picture{
+            max-width: 475px;
+            margin: 0 auto;
+            padding-right: 55px;
+            padding-left: 55px;
+            &::after{
+                width: 200px;
+                height: 200px;
+                border: 15px solid #E8C300;
+                
+            }
+        }
+    }
+
+    .team,
+    .booking,
+    .specialties,
+    .events{
+        &__inner{
+            flex-direction: column;
+        }
+        &__line-middle{
+            display: none;
+        }
+        &__info{
+
+            margin: 50px auto 0;
+            max-width: 650px;
+            order: -1;
+        }
+        &__picture{
+            max-width: 475px;
+            margin: 0 auto;
+            padding-right: 55px;
+            padding-left: 55px;
+            &::after{
+                width: 200px;
+                height: 200px;
+                border: 15px solid #E8C300;
+                
+            }
+        }
+    }
+
+    .specialties{
+        &__item{
+            flex-direction: column;
+        }
+    }
+
+    .events{
+        &__title{
+            margin-bottom: 25px;
+        }
+    }
+    .galerie__images {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media (max-width: 835px){
+    .header{
+        &__menu{
+            display: block;
+            position: relative;
+            margin: 0 -15px;
+        }
+        &__nav{
+            // display: none;
+            padding: 0;
+            width: 100%;
+            border-bottom: none;
+            background-color: #fff;
+            max-width: 100%;
+            position: relative;
+            z-index: 3;
+            text-align: center;
+            transform: translateY(-340px);
+            transition: all .5s;
+            &--open{
+                transform: translateY(160px);
+            }
+        }
+        &__nav-list{
+            display: block;
+        }
+        &__nav-item{
+            width: 100%;
+        }
+        &__nav-link{
+            color: #000;
+            display: block;
+            padding: 10px 0;
+            &:hover{
+                background: #E8C300;
+            }
+        }
+        &__nav-logo{
+            position: absolute;
+            z-index: 10;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+        }
+
+        &__nav-logo-img{
+            display: inline;
+        }
+        &__nav-btn{
+            display: block;
+            position: absolute;
+            z-index: 10;
+            right: 0;
+            top: 50%;
+            margin-right: 15px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            span{
+                background-color: #fff;
+                width: 37px;
+                height: 3px;
+                border-radius: 4px;
+                display: block;
+                margin: 6px 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 775px){
+    .header{
+        &__nav-logo{
+            left: 47%;
+        }
+        &__main{
+            padding: 120px 10px 135px 10px;
+
+            &::before{
+                display: none;
+            }
+            &::after{
+                display: none;
+            }
+        }
+        &__main-title{
+            font-size: 50px;
+            text-align: center;
+        }
+        &__address{
+            padding-right: 0;
+        }
+        &__social{
+            padding-left: 0;
+        }
+        &__main-btn{
+            width: 130px;
+        }
+        &__scrolldown{
+            margin-top: 60px;
+        }
+        &__social,
+        &__address{
+            padding-top: 150px;
+        }
+    }
+    .menu{
+        &__category{
+            flex-wrap: wrap;
+        }
+        &__category-item{
+            border-left: none;
+            border: 1px solid rgba(51,51,51,0.2);
+            margin: 0 10px 15px;
+        }   
+        &__item:nth-child(2){
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .contact{
+        padding: 50px 0;
+        &__form-inner{
+            display: block;
+        }
+        &__form-input{
+            max-width: 100%;
+        }
+        &__form-input + .contact__form-input{
+            margin-left: 0;
+        }   
+        &__form-input + .contact__form-input{
+                margin-top: 10px;
+        }
+        &__form-wrapper{
+            flex-direction: column;
+        }
+        &__form-btn{
+            order: -1;
+            width: 100%;
+            min-width: 0;
+        }
+    }
+}
+
+@media (max-width: 525px){
+    .about,
+    .team,
+    .specialties,
+    .booking,
+    .events{
+        &__picture{
+            max-width: 400px;
+            &::after{
+                width: 150px;
+                height: 150px;
+                border: 12px solid #E8C300;
+            }
+        } 
+    }
+    .booking,
+    .events{
+        &__footer-info{
+            line-height: 25px;
+        }
+    }
+
+    .events{
+        &__image{
+            height: 310px;
+        }
+        &__picture{
+            &::before{
+                height: 15%;
+                right: 7%;
+                top: 5%;
+                width: 73%;
+                writing-mode: horizontal-tb;
+                padding-top: 10px;
+            }
+        }
+        &__picture-corporate{
+            &::before{
+                left: 48px;
+                width: 74%;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 490px){
+    .header{
+        &__social,
+        &__address{
+            display: none;
+        }
+        &__main-buttons{
+            flex-wrap: wrap;
+        }
+        &__main-btn{
+            margin-bottom: 15px;
+        }
+        &__main{
+            padding: 70px 10px 70px 10px;
+        }
+        &__nav-logo{
+            left: 49%;
+        }
+    }
+}
+
+@media (max-width: 450px){
+    .about,
+    .team,
+    .booking,
+    .specialties,
+    .events{
+        &__picture{
+            max-width: 350px;
+            padding-right: 20px;
+            padding-left: 20px;
+            &::after{
+                width: 120px;
+                height: 120px;
+                border: 9px solid #E8C300;
+            }
+        }
+    }
+    .events{
+        &__picture-weddings{
+            &::before{
+                width: 80%;
+            }
+        }
+        &__picture-corporate{
+            &::before{
+                padding-left: 0;
+                line-height: 24px;
+                padding-top: 0;
+                left: 40px;
+                width: 80%;
+                height: 18%;
+
+            }
+        }
+        &__image{
+            height: 260px;
+        }
+    }
+    .footer__map-iframe{
+        height: 350px;
+    }
+}
+
+@media (max-width: 390px){
+    .booking{
+        &__form{
+            display: flex;
+            flex-direction: column;
+        }
+        &__form-item,
+        &__form-select{
+            width: 100% !important;
+        }
+    }
+    .galerie__images {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .menu__category-item{
+        width: 100px;
+    }
+}
